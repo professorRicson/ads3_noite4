@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8cb0fd;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header {
+    background-color: #002d5a;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bem-vindo-ao-site {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 500px;
+}
+
+.container-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 20px; 
+    display: flex;
+    justify-content: center; 
+    z-index: 2;
+}
+
+.banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-denuncie {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.ultimos-posts {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.ultimos-posts h2 {
+    font-size: 1.5em;
+}
+
+.container-posts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.post img {
+    max-width: 400px !important; 
+    height: auto !important; 
+    border-radius: 10px !important; 
+    object-fit: cover;
+}
+
+.btn-veja-mais {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .ultimos-posts h2 {
+        font-size: 2em;
+    }
+
+    .container-posts {
+        gap: 40px;
+    }
+
+    .post img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn-veja-mais {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}
+.container-datas-afirmativas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.DatasAfirmativas {
+    background-color: #9bbbff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.DatasAfirmativas h2 {
+    margin-bottom: 20px;
+}
+
+.container-datas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-imagem {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: #8cb0fd;
+    margin: 0 1.5%; 
+}
+
+.container-imagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.legenda {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.legenda button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-mais-datas {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
