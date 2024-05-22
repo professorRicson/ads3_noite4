@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="javaS.js"></script>
     <title>AMAS LGBTQI+</title>
     
 </head>
@@ -28,37 +29,36 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="bem-vindo-ao-site">
-            <div class="container-banner">>
-                <button class="btn-denuncie">DENUNCIE</button>
-            </div>
-            <video class="banner-video" autoplay muted loop>
+    <section class="bem-vindo-ao-site">
+        <div class="container-banner">>
+            <button class="btn-denuncie">DENUNCIE</button>
+        </div>
+        <video class="banner-video" autoplay muted loop>
                 <source src="imgs/banner.mp4" type="video/mp4">
             </video>
-        </section>
-        <section class="ultimos-posts">
-            <h2>ÚLTIMOS POSTS</h2>
-            <div class="container-posts">
-                <div class="post">
-                    <img src="imgs/passeataOutubroRosa.jpeg" alt="Post 1">
-                </div>
-                <div class="post">
-                    <img src="imgs/ifpe.jpeg" alt="Post 2">
-                </div>
-                <div class="post">
-                    <img src="imgs/WhatsApp Image 2024-05-17 at 9.17.16 PM.jpeg" alt="Post 3">
-                </div>
-                <div class="post">
-                    <img src="imgs/passeataOutubroRosa.jpeg" alt="Post 4">
-                </div>
-                <div class="post">
-                    <img src="imgs/ifpe.jpeg" alt="Post 5">
-                </div>
+    </section>
+    <div class="container-carrossel">
+        <h2>ÚLTIMOS POSTS</h2>
+        <div class="carrossel">
+            <div class="carrossel-slide">
+                <img src="imgs/passeataOutubroRosa.jpeg" alt="Imagem 1">
             </div>
-            <button class="btn-veja-mais">VEJA MAIS...</button>
-        </section>
-    </main>
+            <div class="carrossel-slide">
+                <img src="imgs/logo.jpeg" alt="Imagem 2">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/ifpe.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carrossel-btn anterior" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carrossel-btn proximo" onclick="changeSlide(1)">&#10095;</button>
+        <div class="carrossel-indicators">
+            <span class="ponto-carrossel" onclick="currentSlide(1)"></span>
+            <span class="ponto-carrossel" onclick="currentSlide(2)"></span>
+            <span class="ponto-carrossel" onclick="currentSlide(3)"></span>
+        </div>
+        <button class="btn-veja-mais">VEJA MAIS...</button>
+    </div>
     <div class="container-datas-afirmativas">
         <section class="DatasAfirmativas">
             <h2>Datas Afirmativas</h2>

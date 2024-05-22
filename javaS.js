@@ -1,50 +1,36 @@
-const carousel = document.querySelector('.posts-carousel .carousel');
-    let posX1 = 0;
-    let posX2 = 0;
-    let posInitial;
-    let posFinal;
-    const threshold = 100;
-    carousel.addEventListener('mousedown', dragStart);
-    carousel.addEventListener('touchstart', dragStart);
-    carousel.addEventListener('mouseup', dragEnd);
-    carousel.addEventListener('touchend', dragEnd);
-    carousel.addEventListener('mousemove', dragAction);
-    carousel.addEventListener('touchmove', dragAction);
+let currentSlideIndex = 0;
 
-    function dragStart(e) {
-        e = e || window.event;
-        e.preventDefault();
-        posInitial = carousel.offsetLeft;
-        if (e.type == 'touchstart') {
-            posX1 = e.touches[0].clientX;
-        } else {
-            posX1 = e.clientX;
-            document.onmouseup = dragEnd;
-            document.onmousemove = dragAction;
-        }
+function showSlide(index) {
+    const slides = document.getElementsByClassName('carrossel-slide');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlideIndex = 0;
+    } else if (index < 0) {
+        currentSlideIndex = totalSlides - 1;
+    } else {
+        currentSlideIndex = index;
     }
 
-    function dragAction(e) {
-        e = e || window.event;
-        if (e.type == 'touchmove') {
-            posX2 = posX1 - e.touches[0].clientX;
-            posX1 = e.touches[0].clientX;
-        } else {
-            posX2 = posX1 - e.clientX;
-            posX1 = e.clientX;
-        }
-        carousel.style.left = `${carousel.offsetLeft - posX2}px`;
+    for (let i = 0; i < totalSlides; i++) {
+        slides[i].style.display = 'none';
     }
+l
+    slides[currentSlideIndex].style.display = 'block';
 
-    function dragEnd() {
-        posFinal = carousel.offsetLeft;
-        if (posFinal - posInitial < -threshold) {
-            carousel.style.left = `${-threshold}px`;
-        } else if (posFinal - posInitial > threshold) {
-            carousel.style.left = `${threshold}px`;
-        } else {
-            carousel.style.left = '0px';
-        }
-        document.onmouseup = null;
-        document.onmousemove = null;
+    const indicators = document.getElementsByClassName('ponto-carrossel');
+    for (let i = 0; i < indicators.length; i++) {
+        indicators[i].className = indicators[i].className.replace(' active', '');
     }
+    indicators[currentSlideIndex].className += ' active';
+}
+
+function changeSlide(n) {
+    showSlide(currentSlideIndex + n);
+}
+
+function currentSlide(n) {
+    showSlide(n - 1);
+}
+
+showSlide(currentSlideIndex);

@@ -47,9 +47,9 @@ nav ul li a {
 .container-banner {
     position: absolute;
     width: 100%;
-    bottom: 20px; 
+    bottom: 20px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     z-index: 2;
 }
 
@@ -69,56 +69,94 @@ nav ul li a {
     cursor: pointer;
 }
 
-.ultimos-posts {
+.container-carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #88adfd;;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-carrossel h2 {
     text-align: center;
-    padding: 40px 20px;
+    color: #2c3e50;
 }
 
-.ultimos-posts h2 {
-    font-size: 1.5em;
-}
-
-.container-posts {
+.carrossel {
     display: flex;
-    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
     gap: 10px;
-    margin: 10px 0;
 }
 
-.post img {
-    max-width: 400px !important; 
-    height: auto !important; 
-    border-radius: 10px !important; 
-    object-fit: cover;
+.carrossel-slide {
+    flex: 1;
+    min-width: calc(100% / 3 - 10px); 
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+.carrossel-indicators {
+    text-align: center;
+    margin-top: 10px; /* Espaçamento acima dos indicadores */
+}
+
+.ponto-carrossel {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.active, .ponto-carrossel:hover {
+    background-color: #717171;
 }
 
 .btn-veja-mais {
-    background-color: #0056b3;
-    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
     color: white;
-    padding: 10px 20px;
-    font-size: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-@media (min-width: 768px) {
-    .ultimos-posts h2 {
-        font-size: 2em;
-    }
-
-    .container-posts {
-        gap: 40px;
-    }
-
-    .post img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .btn-veja-mais {
-        padding: 15px 30px;
-        font-size: 1.2em;
-    }
+    margin-top: 20px;
 }
 .container-datas-afirmativas {
     max-width: 1200px;
