@@ -286,3 +286,78 @@ nav ul li a {
     height: 450px;
     border-radius: 10px;
 }
+footer {
+    background-color: #183263;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-rodape {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-rodape h3 {
+    margin-bottom: 10px;
+}
+
+.menu, .siga-nos, .informacoes-contato {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones-sociais {
+    display: flex;
+    flex-direction: column; 
+}
+
+.icones-sociais a {
+    margin-bottom: 10px; 
+}
+
+.icones-sociais a img {
+    width: 30px;
+}
+.informacoes-contato p {
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.colunas-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.colunas-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.colunas-menu ul li {
+    margin: 5px 0;
+}
+
+.colunas-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: justify;
+}
+
+.colunas-menu ul li a:hover {
+    color: #00bfff;
+}
+.menu h3, .informacoes-contato h3, .siga-nos h3 {
+    text-align: center;
+    width: 100%;
+}
