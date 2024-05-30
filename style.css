@@ -361,6 +361,71 @@ footer {
     text-align: center;
     width: 100%;
 }
+container-aAssociacao {
+    width: 80%;
+    margin: auto;
+    background-color: #5b90d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-aAssociacao h1 {
+    text-align: center;
+    color: #0a3d62;
+}
+.container-aAssociacao p {
+    text-align: justify;
+    color: #fff;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+.container-aAssociacao .areas-de-atuacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+}
+.container-aAssociacao .area {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #689fcc;
+    text-align: center;
+}
+.container-aAssociacao .area h3 {
+    margin-top: 0;
+}
+.container-aAssociacao .area i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.container-visita {
+    width: 80%;
+    margin: auto;
+    background-color: #74b2e6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-visita h2 {
+    text-align: center;
+    color: #0a3d62;
+}
+.container-visita p {
+    text-align: center;
+    color: #fff;
+}
+.container-mapa-visita {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px
+    
+}
 .acoes{
     padding: 20px;
     text-align: center;
