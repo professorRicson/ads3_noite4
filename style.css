@@ -5,22 +5,14 @@ body {
 }
 
 .container-menu {
-<<<<<<< HEAD
-    
-=======
->>>>>>> e0d96ac411b592101970469029b83708ef8171aa
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
-header {
-<<<<<<< HEAD
-    background-color: transparent;
-=======
-    background-color: #002d5a;
->>>>>>> e0d96ac411b592101970469029b83708ef8171aa
+.header {
+    background-color: transparent;   
 }
 
 header .logo img {
@@ -369,11 +361,10 @@ footer {
     text-align: center;
     width: 100%;
 }
-<<<<<<< HEAD
+
+
 .container-aAssociacao {
-=======
-container-aAssociacao {
->>>>>>> e0d96ac411b592101970469029b83708ef8171aa
+
     width: 80%;
     margin: auto;
     background-color: #5b90d4;
@@ -486,7 +477,6 @@ container-aAssociacao {
 
 .saiba-mais:hover {
     background-color: #008fbf;
-<<<<<<< HEAD
 }
 
 .equipe-pessoa {
@@ -498,6 +488,16 @@ container-aAssociacao {
     
     
     background-color: transparent;
+}
+
+.person-card{
+    background-color: #3a78a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .container-parceiros{
@@ -514,6 +514,29 @@ container-aAssociacao {
    background-color: #3a78a1;
    color: #fff;
    border-radius: 10px;
-=======
->>>>>>> e0d96ac411b592101970469029b83708ef8171aa
+
+}
+
+.denuncia_informacao{
+
+    background-color: #eb7da7;
+    display: flex;   
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    
+
+}
+
+.informacoes{
+    
+    background-color: #df5b8d;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    justify-content: center;
 }
