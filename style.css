@@ -5,7 +5,10 @@ body {
 }
 
 .container-menu {
+<<<<<<< HEAD
     
+=======
+>>>>>>> e0d96ac411b592101970469029b83708ef8171aa
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +16,11 @@ body {
 }
 
 header {
+<<<<<<< HEAD
     background-color: transparent;
+=======
+    background-color: #002d5a;
+>>>>>>> e0d96ac411b592101970469029b83708ef8171aa
 }
 
 header .logo img {
@@ -362,7 +369,11 @@ footer {
     text-align: center;
     width: 100%;
 }
+<<<<<<< HEAD
 .container-aAssociacao {
+=======
+container-aAssociacao {
+>>>>>>> e0d96ac411b592101970469029b83708ef8171aa
     width: 80%;
     margin: auto;
     background-color: #5b90d4;
@@ -475,6 +486,7 @@ footer {
 
 .saiba-mais:hover {
     background-color: #008fbf;
+<<<<<<< HEAD
 }
 
 .equipe-pessoa {
@@ -502,4 +514,6 @@ footer {
    background-color: #3a78a1;
    color: #fff;
    border-radius: 10px;
+=======
+>>>>>>> e0d96ac411b592101970469029b83708ef8171aa
 }
