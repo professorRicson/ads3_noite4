@@ -11,8 +11,14 @@ body {
     padding: 10px 20px;
 }
 
+<<<<<<< HEAD
 .header {
     background-color: transparent;   
+=======
+header {
+    background-color: transparent;
+    background-color: #002d5a;
+>>>>>>> e91d368c1288b7a99c065f8a42b142a0be20f0ee
 }
 
 header .logo img {
@@ -362,10 +368,15 @@ footer {
     width: 100%;
 }
 
+<<<<<<< HEAD
 
 .container-aAssociacao {
 
     width: 80%;
+=======
+.container-aAssociacao {
+   width: 80%;
+>>>>>>> e91d368c1288b7a99c065f8a42b142a0be20f0ee
     margin: auto;
     background-color: #5b90d4;
     padding: 20px;
@@ -514,6 +525,7 @@ footer {
    background-color: #3a78a1;
    color: #fff;
    border-radius: 10px;
+<<<<<<< HEAD
 
 }
 
@@ -539,4 +551,6 @@ footer {
     width: 250px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     justify-content: center;
+=======
+>>>>>>> e91d368c1288b7a99c065f8a42b142a0be20f0ee
 }
