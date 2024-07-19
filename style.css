@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8cb0fd;
+}
+
+.container-menu {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header {
+    background-color: transparent;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bem-vindo-ao-site {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 500px;
+}
+
+.container-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-denuncie {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.container-carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #88adfd;;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-carrossel h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    gap: 10px;
+}
+
+.carrossel-slide {
+    flex: 1;
+    min-width: calc(100% / 3 - 10px); 
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
+}
+
+.carrossel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ponto-carrossel {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.active, .ponto-carrossel:hover {
+    background-color: #717171;
+}
+
+.btn-veja-mais {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.container-datas-afirmativas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.DatasAfirmativas {
+    background-color: #9bbbff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.DatasAfirmativas h2 {
+    margin-bottom: 20px;
+}
+
+.container-datas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-imagem {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: #8cb0fd;
+    margin: 0 1.5%; 
+}
+
+.container-imagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.legenda {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.legenda button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-mais-datas {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-proxima-parada {
+    background-color: #8cb0fd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.container-proxima-parada h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contagem-regressiva {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.item-contagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-contagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+}
+
+.numero-contagem {
+    font-size: 3em;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.etiqueta-contagem {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa-container iframe {
+    border: 0;
+    width: 85%;
+    height: 450px;
+    border-radius: 10px;
+}
+footer {
+    background-color: #183263;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-rodape {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-rodape h3 {
+    margin-bottom: 10px;
+}
+
+.menu, .siga-nos, .informacoes-contato {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones-sociais {
+    display: flex;
+    flex-direction: column; 
+}
+
+.icones-sociais a {
+    margin-bottom: 10px; 
+}
+
+.icones-sociais a img {
+    width: 30px;
+}
+.informacoes-contato p {
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.colunas-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.colunas-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.colunas-menu ul li {
+    margin: 5px 0;
+}
+
+.colunas-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: justify;
+}
+
+.colunas-menu ul li a:hover {
+    color: #00bfff;
+}
+.menu h3, .informacoes-contato h3, .siga-nos h3 {
+    text-align: center;
+    width: 100%;
+}
+.container-aAssociacao {
+    width: 80%;
+    margin: auto;
+    background-color: #5b90d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-aAssociacao h1 {
+    text-align: center;
+    color: #0a3d62;
+}
+.container-aAssociacao p {
+    text-align: justify;
+    color: #fff;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+.container-aAssociacao .areas-de-atuacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+}
+.container-aAssociacao .area {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #689fcc;
+    text-align: center;
+}
+.container-aAssociacao .area h3 {
+    margin-top: 0;
+}
+.container-aAssociacao .area i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.container-visita {
+    width: 80%;
+    margin: auto;
+    background-color: #74b2e6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.container-visita h2 {
+    text-align: center;
+    color: #0a3d62;
+}
+.container-visita p {
+    text-align: center;
+    color: #fff;
+}
+.container-mapa-visita {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px
+    
+}
+.acoes{
+    padding: 20px;
+    text-align: center;
+}
+.acoes h1 {
+    font-size: 2.5em;
+    color: #3a78a1;
+    margin-bottom: 20px;
+}
+
+.acoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.acao {
+    background-color: #3a78a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.acao h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.acao p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.saiba-mais {
+    display: inline-block;
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.saiba-mais:hover {
+    background-color: #008fbf;
+}
+
+.equipe-pessoa {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10%;
+    
+    
+    background-color: transparent;
+}
+
+.container-parceiros{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-imagem{
+
+   background-color: #3a78a1;
+   color: #fff;
+   border-radius: 10px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="javaS.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>AMAS LGBTQI+</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container-menu">
+            <div class="logo">
+                <img src="imgs/logoSemfundo.png" alt="AMAS LGBT">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aAssociacao.html">A Associação</a></li>
+                    <li><a href="acoes.html">Ações</a></li>
+                    <li><a href="#">Entrevistas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="#">Denuncie</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="bem-vindo-ao-site">
+        <div class="container-banner">
+            <button class="btn-denuncie">DENUNCIE</button>
+        </div>
+            <video class="banner-video" autoplay muted loop>
+                <source src="imgs/banner.mp4" type="video/mp4">
+            </video>
+    </section>
+    <div class="container-carrossel">
+        <h2>ÚLTIMOS POSTS</h2>
+        <div class="carrossel">
+            <div class="carrossel-slide">
+                <img src="imgs/passeataOutubroRosa.jpeg" alt="Imagem 1">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/logo.jpeg" alt="Imagem 2">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/ifpe.jpeg" alt="Imagem 3">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/passeataOutubroRosa.jpeg" alt="Imagem 1">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/logo.jpeg" alt="Imagem 2">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imgs/ifpe.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carrossel-btn anterior" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carrossel-btn proximo" onclick="changeSlide(1)">&#10095;</button>
+        <div class="carrossel-indicators">
+            <span class="ponto-carrossel" onclick="currentSlide(1)"></span>
+            <span class="ponto-carrossel" onclick="currentSlide(2)"></span>
+            <span class="ponto-carrossel" onclick="currentSlide(3)"></span>
+        </div>
+        <button class="btn-veja-mais">VEJA MAIS...</button>
+    </div>
+    <div class="container-datas-afirmativas">
+        <section class="DatasAfirmativas">
+            <h2>Datas Afirmativas</h2>
+            <div class="container-datas">
+                <div class="container-imagem">
+                    <img src="imgs/banner.jpeg" alt="Imagem 1">
+                    <div class="legenda">
+                        <p>Legenda da imagem 1</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="container-imagem">
+                    <img src="imgs/banner.jpeg" alt="Imagem 2">
+                    <div class="legenda">
+                        <p>Legenda da imagem 2</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="container-imagem">
+                    <img src="imgs/banner.jpeg" alt="Imagem 3">
+                    <div class="legenda">
+                        <p>Legenda da imagem 3</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-mais-datas">Mais Datas</button>
+        </section>
+    </div>
+    <div class="container-proxima-parada">
+        <h2>PRÓXIMA PARADA LGBTQIAP+</h2>
+        <div class="contagem-regressiva">
+            <div class="item-contagem">
+                <div class="caixa-contagem">
+                    <span class="numero-contagem" id="dias">0</span>
+                    <span class="etiqueta-contagem">Dias</span>
+                </div>
+            </div>
+            <div class="item-contagem">
+                <div class="caixa-contagem">
+                    <span class="numero-contagem" id="horas">0</span>
+                    <span class="etiqueta-contagem">Horas</span>
+                </div>
+            </div>
+            <div class="item-contagem">
+                <div class="caixa-contagem">
+                    <span class="numero-contagem" id="minutos">0</span>
+                    <span class="etiqueta-contagem">Minutos</span>
+                </div>
+            </div>
+            <div class="item-contagem">
+                <div class="caixa-contagem">
+                    <span class="numero-contagem" id="segundos">0</span>
+                    <span class="etiqueta-contagem">Segundos</span>
+                </div>
+            </div>
+        </div>
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0752900170287!2d-46.65381282576471!3d-23.56573927879676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1716422408778!5m2!1spt-BR!2sbr" style="width: 85%; height: 450px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+<footer>
+    <div class="container-rodape">
+        <div class="siga-nos">
+            <h3>Siga-Nos</h3>
+            <div class="icones-sociais">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="informacoes-contato">
+            <h3>Informações De Contato</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua 13 de maio, 31, Cohab 10, Palmares - PE, CEP: 55540-000</p>
+            <p><i class="fas fa-phone"></i> Telefone: (81) 3661-0333</p>
+            <p><i class="fas fa-mobile-alt"></i> Dispositivo móvel: (81) 99999-9999</p>
+            <p><i class="fas fa-envelope"></i> E-mail: amaslgbt@gmail.com</p>
+        </div>
+        <div class="menu">
+            <h3>Menu</h3>
+            <div class="colunas-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="acoes.html">Ações</a></li>
+                    <li><a href="aAssociacao.html">A Associação</a></li>
+                    <li><a href="#">Entrevistas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Denuncie</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
