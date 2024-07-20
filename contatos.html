@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="javaS.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Equipe Parceiros</title>
+    <title>AMAS LGBTQI+</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="script.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "zg4R1R_BP4fiRyTgk",
+      });
+   })();
+</script>
+    </script>
 </head>
 <body>
     <header>
@@ -30,37 +43,60 @@
         </div>
     </header>
 
-    
-    <div class="container-parceiros">
-        <section class="parceiros">
-            <h1>NOSSOS PARCEIROS</h2>
-            <div class="container-datas">
-                <div class="container-imagem">
-                    <img src="imgs/banner.jpeg" alt="Imagem 1">
-                    <div class="legenda">
-                        <p>Legenda da imagem 1</p>
-                        <button>Saiba Mais</button>
-                    </div>
-                </div>
-                <div class="container-imagem">
-                    <img src="imgs/banner.jpeg" alt="Imagem 2">
-                    <div class="legenda">
-                        <p>Legenda da imagem 2</p>
-                        <button>Saiba Mais</button>
-                    </div>
-                </div>
-                <div class="container-imagem">
-                    <img src="imgs/banner.jpeg" alt="Imagem 3">
-                    <div class="legenda">
-                        <p>Legenda da imagem 3</p>
-                        <button>Saiba Mais</button>
-                    </div>
-                </div>
-            </div>
-        
-        </section>
+    <div class="container-contatos">
+        <h2>Envie sua Mensagem</h2>
+        <div class="form-group">
+            <labelfor="nome">Nome:</label><br>
+            <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="nome"
+                placeholder="Digite o seu nome"
+                />
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label><br>
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Digite o seu email"
+                />
+        </div>
+        <div class="form-group">
+            <label for="Telefone">Telefone:</label><br>
+            <input
+                type="tel"
+                class="form-control"
+                id="Telefone"
+                name="Telefone"
+                placeholder="Digite o seu telefone"
+                />
+        </div>
+        <div class="form-group">
+            <label for="cidade">Cidade</label><br>
+            <input
+                type="text"
+                class="form-control"
+                id="Cidade"
+                nome="Cidade"
+                placeholder="Digite a sua cidade"
+                />
+        </div>
+        <div class="form-group">
+            <label for="text">Mensagem</label><br>
+            <textarea
+                rows="3"
+                class="form-control"
+                id="Mensagem"
+                name="Mensagem">
+            </textarea>
+        </div>
+            <button class="btn btn-primary" onclick="sendMail()">Enviar</button>
     </div>
-</body>
+
 <footer>
     <div class="container-rodape">
         <div class="siga-nos">
@@ -88,8 +124,8 @@
                 </ul>
                 <ul>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="equipe.html">Equipe</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Parceiros</a></li>
                     <li><a href="#">Denuncie</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
@@ -97,4 +133,5 @@
         </div>
     </div>
 </footer>
+</body>
 </html>
