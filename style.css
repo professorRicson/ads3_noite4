@@ -539,3 +539,42 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     justify-content: center;
 }
+.container_denuncie {
+    text-align: center;
+    background-color: #d7dbff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.container_denuncie  img {
+    width: 100px;
+    margin-bottom: 50px;
+}
+.container_denuncie  h1 {
+    font-size: 24px;
+    color: #2b4bff;
+    margin-bottom: 10px;
+}
+.container_denuncie  h2 {
+    font-size: 18px;
+    color: #ffbc1b;
+    margin-bottom: 20px;
+}
+.container_denuncie  p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.container_denuncie  a {
+    background-color: #2b4bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container_denuncie  a:hover {
+    background-color: #1a34cc;
+}
