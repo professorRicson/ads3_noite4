@@ -364,7 +364,7 @@ footer {
 }
 
 .container-aAssociacao {
-   width: 80%;
+    width: 80%;
     margin: auto;
     background-color: #5b90d4;
     padding: 20px;
@@ -524,8 +524,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-    
-
 }
 
 .informacoes{
@@ -577,4 +575,43 @@ footer {
 }
 .container_denuncie  a:hover {
     background-color: #1a34cc;
+}
+
+.container-contatos {
+    width: 80%;
+    margin: 1em 8em 1em 8em;
+    background-color: #5b90d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container-contatos h2 {
+    color: white;
+    background-color: #5b90d4;
+    text-align: center;
+}
+
+.container-contatos button {
+    display: inline-block;
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.container-contatos button:hover {
+    background-color: #008fbf;
+}
+
+.form-group {
+    flex: 1 1 300px;
+    margin: 5% 20% 5% 20%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #689fcc;
+    text-align: center;
 }
