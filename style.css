@@ -429,7 +429,7 @@ footer {
     
 }
 .acoes{
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 .acoes h1 {
@@ -452,6 +452,7 @@ footer {
     margin: 10px;
     width: 250px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
 }
 
 .acao h2 {
@@ -506,6 +507,7 @@ footer {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 50px;
 }
 
 .container-imagem{
@@ -540,10 +542,16 @@ footer {
 .container_denuncie {
     text-align: center;
     background-color: #d7dbff;
-    padding: 30px;
+    padding: 50px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
 }
 .container_denuncie  img {
     width: 100px;
