@@ -663,3 +663,60 @@ footer {
     text-align: center; /* Centraliza o botão dentro da div */
 
 }
+.formularios {
+    padding: 50px;
+    text-align: center;
+}
+
+.formularios h1 {
+    font-size: 2.5em;
+    color: #3a78a1;
+    margin-bottom: 20px;
+}
+
+.formularios-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #3a78a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: left; 
+}
+
+.formulario:hover {
+    transform: scale(1.05);
+}
+
+.formulario h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.formulario p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.saiba-mais {
+    display: inline-block;
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.saiba-mais:hover {
+    background-color: #008fbf;
+}
