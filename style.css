@@ -464,7 +464,12 @@ footer {
     font-size: 1em;
     margin-bottom: 20px;
 }
-
+.imagem-acao {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 .saiba-mais {
     display: inline-block;
     background-color: #00bfff;
