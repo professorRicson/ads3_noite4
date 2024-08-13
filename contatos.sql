@@ -5,5 +5,5 @@ CREATE TABLE contatos (
     telefone VARCHAR(20),
     cidade VARCHAR(50),
     mensagem TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
