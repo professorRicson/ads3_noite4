@@ -34,32 +34,37 @@ function currentSlide(n) {
 
 showSlide(currentSlideIndex);
 
-document.addEventListener('DOMContentLoaded', () => {
-    function atualizarContagemRegressiva() {
-        const dataEvento = new Date('2024-06-02T10:00:00'); 
-        const elementoDias = document.getElementById('dias');
-        const elementoHoras = document.getElementById('horas');
-        const elementoMinutos = document.getElementById('minutos');
-        const elementoSegundos = document.getElementById('segundos');
+// Defina a data de destino para a próxima parada
+const dataDestino = new Date('2025-12-31T23:59:59').getTime();
 
-        function atualizar() {
-            const agora = new Date();
-            const diferencaTempo = dataEvento - agora;
+// Função para atualizar o contador
+function atualizarContador() {
+    const agora = new Date().getTime();
+    const distancia = dataDestino - agora;
 
-            const dias = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24));
-            const horas = Math.floor((diferencaTempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutos = Math.floor((diferencaTempo % (1000 * 60 * 60)) / (1000 * 60));
-            const segundos = Math.floor((diferencaTempo % (1000 * 60)) / 1000);
-
-            elementoDias.textContent = dias >= 0 ? dias : 0;
-            elementoHoras.textContent = horas >= 0 ? horas : 0;
-            elementoMinutos.textContent = minutos >= 0 ? minutos : 0;
-            elementoSegundos.textContent = segundos >= 0 ? segundos : 0;
-        }
-
-        atualizar();
-        setInterval(atualizar, 1000);
+    if (distancia < 0) {
+        document.getElementById('dias').innerText = '00';
+        document.getElementById('horas').innerText = '00';
+        document.getElementById('minutos').innerText = '00';
+        document.getElementById('segundos').innerText = '00';
+        return;
     }
 
-    atualizarContagemRegressiva();
-});
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    document.getElementById('dias').innerText = formatarTempo(dias);
+    document.getElementById('horas').innerText = formatarTempo(horas);
+    document.getElementById('minutos').innerText = formatarTempo(minutos);
+    document.getElementById('segundos').innerText = formatarTempo(segundos);
+}
+
+// Função para formatar o tempo com dois dígitos
+function formatarTempo(tempo) {
+    return tempo < 10 ? '0' + tempo : tempo;
+}
+
+// Atualizar o contador a cada segundo
+setInterval(atualizarContador, 1000);
