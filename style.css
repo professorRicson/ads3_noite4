@@ -193,11 +193,10 @@ nav ul li a {
 }
 
 .container-imagem img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem (deve ser igual à largura) */
+    border-radius: 50%; /* Faz a imagem circular */
+    object-fit: cover; /* Mantém a imagem proporcional */
 }
 
 .legenda {
