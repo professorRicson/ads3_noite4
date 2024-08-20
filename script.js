@@ -1,7 +1,5 @@
 const res = require("express/lib/response");
 
-ValidationExpression="^[0-9]{2}-([0-9]{8}|[0-9]{9})"
-
 function sendMail() {
     var params = {
         name: document.getElementById("name").value,
