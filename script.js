@@ -21,7 +21,7 @@ function sendMail() {
                 document.getElementById("Cidade").value = "";
                 document.getElementById("Mensagem").value = "";
                 console.log(res);
-                alert("your message sent sucessfully");
+                alert("Sua mensagem foi enviada com sucesso!!!");
             })
-            .catch((err) => console.log(err));
+        .catch((err) => console.log(err));
 }
