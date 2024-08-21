@@ -66,11 +66,21 @@
             <label for="Telefone">Telefone:</label><br>
             <input
                 type="tel"
-                class="form-control"
                 id="Telefone"
-                name="Telefone"
-                placeholder="Digite o seu telefone"
-                /><br><br>
+                name="phone" 
+                placeholder="(11) 1 11111111" required>
+                <script>
+                    document.getElementById('Telefone').addEventListener('input', function (e) {
+                      let value = e.target.value.replace(/\D/g, '');
+                      if (value.length > 11) value = value.slice(0, 11);
+                  
+                      if (value.length >= 2) {
+                        value = `(${value.slice(0, 2)}) ` + value.slice(2);
+                      }
+                      e.target.value = value;
+                    });
+                  </script>
+                <br><br>
             <label for="cidade">Cidade</label><br>
             <input
                 type="text"
