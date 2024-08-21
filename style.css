@@ -59,7 +59,26 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
 }
+.container-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 95%;
+    padding: 10px;
 
+    & h3 {
+        color: #8f8d8d;
+        font-size: 140%;
+    }
+
+    & iframe {
+        margin: 20px 0px;
+        padding: 20px;
+        width: 80%;
+    }
+}
 .btn-denuncie {
     background-color: #e74c3c;
     border: none;
